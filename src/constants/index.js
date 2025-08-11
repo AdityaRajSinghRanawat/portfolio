@@ -188,5 +188,8 @@ export const socials = [
 ];
 
 export const contact = [
-  { email: "mailto:adityarajsinghranawatjobs@gmail.com" },
+  {
+    email: "mailto:adityarajsinghranawatjobs@gmail.com",
+    emailName: "adityarajsinghranawatjobs@gmail.com",
+  },
 ];
