@@ -1,8 +1,8 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { contact, socials } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   {
@@ -18,6 +18,11 @@ const Navbar = () => {
   const bottomLineRef = useRef(null);
   const tl = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
+  const iconTL = useRef(null);
+  const burgerRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const [showBurger, setShowBurger] = useState(true);
 
   useGSAP(() => {
     gsap.set(navRef.current, { xPercent: 100 });
@@ -55,16 +60,74 @@ const Navbar = () => {
         },
         "<+0.6"
       );
+
+    iconTL.current = gsap
+      .timeline({
+        paused: true,
+      })
+
+      .to(topLineRef.current, {
+        rotation: 45,
+        y: 3.3,
+        duration: 0.8,
+        ease: "power2.out",
+      })
+      .to(
+        bottomLineRef.current,
+        {
+          rotation: -45,
+          y: -3.3,
+          duration: 0.8,
+          ease: "power2.out",
+        },
+        "<"
+      );
   }, []);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setShowBurger(currentScrollY <= lastScrollY || currentScrollY <= 0);
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  {
+    /*
+      [] means run this only once
+
+      If you removed the [] here, your handleScroll function would be 
+      re-added every time state changes (like isOpen or showBurger), 
+      which would slow things down and cause multiple triggers 
+      for each scroll.
+    */
+  }
 
   const toggleMenu = () => {
     if (isOpen) {
       tl.current.reverse();
+      iconTL.current.reverse();
     } else {
       tl.current.play();
+      iconTL.current.play();
     }
 
     setIsOpen(!isOpen);
+  };
+
+  const burgerColor = (hovering) => {
+    if (isOpen) {
+      gsap.to([topLineRef.current, bottomLineRef.current], {
+        background: hovering ? "white" : "rgba(255, 255, 255, 0.8)",
+        duration: 0.3,
+        ease: "power2.out",
+      });
+    }
   };
 
   return (
@@ -85,20 +148,37 @@ const Navbar = () => {
                   ref={(el) => {
                     {
                       /*
-                      this is useful in the scrollIntoView() function:- 
-                      linksRef.current[0] = <div>home</div>
-                      linksRef.current[1] = <div>services</div> 
 
-                      this is another way to use useRef
-                  */
+                        this is useful in the scrollIntoView() function:- 
+                        linksRef.current[0] = <div>home</div>
+                        linksRef.current[1] = <div>services</div> 
+
+                        this is another way to use useRef
+                      */
                     }
                     return (linksRef.current[index] = el);
                   }}
                 >
-                  {/*el is the current div and we are storing the current element into linksRef array*/}
-                  <a className="transition-all duration-300 cursor-pointer hover:text-white">
+                  {/*
+                    el is the current div and we are storing the current element into linksRef array
+                  */}
+
+                  {/*
+                    we are going to replace the <a></a> tag with 
+                    react-scroll "link" tag to smooth scroll
+                  
+                    now we will also not use "href = {`#${section}`}"
+                    instead we will use "to = {`${section}`}"
+                  */}
+                  <Link
+                    className="transition-all duration-300 cursor-pointer hover:text-white"
+                    to={`${section}`}
+                    smooth
+                    offset={0}
+                    duration={2000}
+                  >
                     {section}
-                  </a>
+                  </Link>
                 </div>
               );
             }
@@ -141,6 +221,14 @@ const Navbar = () => {
       <div
         className="fixed z-50 flex flex-col items-center justify-center gap-1 transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 right-10 "
         onClick={toggleMenu}
+        onMouseEnter={() => burgerColor(true)}
+        onMouseLeave={() => burgerColor(false)}
+        ref={burgerRef}
+        style={
+          showBurger
+            ? { clipPath: "circle(50% at 50% 50%)" }
+            : { clipPath: "circle(0% at 50% 50%)" }
+        }
       >
         <span
           ref={topLineRef}
