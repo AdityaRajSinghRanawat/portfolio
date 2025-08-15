@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { contact, socials } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link } from "react-scroll";
+import MusicBox from "./MusicBox";
 
 const Navbar = () => {
   {
@@ -20,7 +21,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const iconTL = useRef(null);
   const burgerRef = useRef(null);
-  const [isHovered, setIsHovered] = useState(false);
+  
 
   const [showBurger, setShowBurger] = useState(true);
 
@@ -68,7 +69,7 @@ const Navbar = () => {
 
       .to(topLineRef.current, {
         rotation: 45,
-        y: 3.3,
+        y: 4.5,
         duration: 0.8,
         ease: "power2.out",
       })
@@ -76,7 +77,7 @@ const Navbar = () => {
         bottomLineRef.current,
         {
           rotation: -45,
-          y: -3.3,
+          y: -4.5,
           duration: 0.8,
           ease: "power2.out",
         },
@@ -111,7 +112,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     if (isOpen) {
       tl.current.reverse();
-      iconTL.current.reverse();
+      iconTL.current.reverse(); 
     } else {
       tl.current.play();
       iconTL.current.play();
@@ -218,8 +219,9 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <MusicBox showMusicBurger={showBurger}/>
       <div
-        className="fixed z-50 flex flex-col items-center justify-center gap-1 transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 right-10 "
+        className="fixed z-50 flex flex-col items-center justify-center gap-2 transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 right-10"
         onClick={toggleMenu}
         onMouseEnter={() => burgerColor(true)}
         onMouseLeave={() => burgerColor(false)}
