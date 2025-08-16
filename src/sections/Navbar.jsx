@@ -21,7 +21,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const iconTL = useRef(null);
   const burgerRef = useRef(null);
-  
+
+  const isOpenRef = useRef(isOpen);
 
   const [showBurger, setShowBurger] = useState(true);
 
@@ -85,11 +86,68 @@ const Navbar = () => {
       );
   }, []);
 
+  {
+    /*
+    # Why [] creates problems:-
+    The effect runs only once after the first render 
+    (because the dependency array is empty)
+    
+    The function handleScroll is created during that first render.
+
+    At that moment, isOpen was false.
+
+    Closures in JavaScript mean: handleScroll will remember 
+    the variables as they were when it was created.
+    
+    So even if React re-renders and isOpen becomes true, 
+    the handleScroll in memory still sees the old false.
+
+
+
+    # Why [isOpen] fixes it :-
+    Now, every time isOpen changes, React cleans up the 
+    old effect and sets up a new one.
+
+    That means a new handleScroll closure is created, 
+    which now “sees” the latest isOpen.
+
+
+
+    # Why the ref version is different:-
+
+    The scroll listener is attached only once ([]).
+
+    Inside the listener, we don't use the stale isOpen from closure 
+    instead we read isOpenRef.current.
+
+    isOpenRef.current is updated on every render where isOpen changes.
+
+
+
+    # main difference:-
+
+    [isOpen] version -> 
+    listener is removed and re-added every time isOpen changes.
+    Fine if toggling rarely, but unnecessary work if isOpen changes often.
+
+    ref version -> 
+    listener is added once and just reads from ref.
+  */
+  }
+
+  useEffect(() => {
+    isOpenRef.current = isOpen;
+  }, [isOpen]);
+
   useEffect(() => {
     let lastScrollY = window.scrollY;
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      setShowBurger(currentScrollY <= lastScrollY || currentScrollY <= 0);
+      const currentScrollStatus =
+        currentScrollY <= lastScrollY || currentScrollY <= 0;
+      if (!isOpenRef.current) {
+        setShowBurger(currentScrollStatus);
+      }
       lastScrollY = currentScrollY;
     };
 
@@ -98,6 +156,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   {
     /*
       [] means run this only once
@@ -112,7 +171,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     if (isOpen) {
       tl.current.reverse();
-      iconTL.current.reverse(); 
+      iconTL.current.reverse();
     } else {
       tl.current.play();
       iconTL.current.play();
@@ -177,6 +236,7 @@ const Navbar = () => {
                     smooth
                     offset={0}
                     duration={2000}
+                    onClick={toggleMenu}
                   >
                     {section}
                   </Link>
@@ -219,7 +279,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <MusicBox showMusicBurger={showBurger}/>
+      <MusicBox showMusicBurger={showBurger} />
       <div
         className="fixed z-50 flex flex-col items-center justify-center gap-2 transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 right-10"
         onClick={toggleMenu}

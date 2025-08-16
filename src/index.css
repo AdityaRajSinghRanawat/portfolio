@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 /* Amiamie Regular */
 @font-face {
   font-family: "Amiamie";
@@ -119,8 +118,16 @@ body {
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
 }
 
+{/*
+  You can use "leading" class to set line-height.
+  For example, "leading-6" sets line-height to 1.5rem.
+  
+  But it was causing issues with text overflow in some cases.
+  So, I have removed it from the utility classes.
+*/}
+
 @utility banner-text-responsive {
-  @apply text-[68px] sm:text-[118px] md:text-[126px] lg:text-[152px] leading-9 sm:leading-16 lg:leading-20;
+  @apply text-3xl sm:text-5xl lg:text-7xl;
 }
 
 @utility value-text-responsive {
@@ -134,4 +141,3 @@ body {
 @utility contact-text-responsive {
   @apply text-[42px] sm:text-[52px] md:text-[62px] lg:text-[100px];
 }
-

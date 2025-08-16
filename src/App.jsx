@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./sections/Navbar";
 import Welcome from "./sections/Welcome";
+import Hero from "./sections/Hero";
 
 const App = () => {
   const [started, setStarted] = useState(false);
@@ -8,7 +9,7 @@ const App = () => {
 
   const startSite = () => {
     setStarted(true);
-    setTimeout(() => setVisible(true), 300);
+    setTimeout(() => setVisible(true), 1);
   };
 
   return (
@@ -18,13 +19,24 @@ const App = () => {
         it will start when onStart is called as a function
       */}
 
-      {!started && <Welcome onStart={startSite} />}
+      {!started && <Welcome onStartProp={startSite} />}
       {started && (
         <div
-          className={`opacity-${visible ? "100" : "0"} transition-opacity duration-700`}
+          className={`transition-opacity duration-1000 ${
+            visible ? "opacity-100" : "opacity-0"
+          }`}
         >
+          {/*
+            Tailwind does not support dynamic class names like opacity-${value}
+            
+            so this does not work:-
+            
+            className={`opacity-${visible ? "100" : "0"} transition-opacity duration-700`}
+
+          */}
           <Navbar />
-          <section id="home" className="h-[200vh] bg-gray-100" />
+          <Hero />
+
           <section id="services" className="h-[200vh] bg-red-100" />
           <section id="about" className="h-[200vh] bg-blue-100" />
         </div>
