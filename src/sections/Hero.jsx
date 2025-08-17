@@ -11,9 +11,13 @@ const Hero = () => {
           style={{ clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)" }}
           className="flex flex-col justify-center gap-3 pt-16 sm:gap-5"
         >
-          <p className="text-sm font-light tracking-[0.5rem] uppercase px-10 text-black">
-            404 No Bugs Found
-          </p>
+          {/* We used items-baseline here to align the text */}
+          <div className="md:text-xl font-light tracking-[0.5rem] uppercase px-10 text-black flex flex-wrap items-baseline">
+            <div>I am Adi</div>
+            <div className="text-xl md:text-2xl font-zen-antique-soft">
+              {"("}アディ{")"}
+            </div>
+          </div>
           <div className="px-10">
             {/*
               banner-text-responsive is my custom class in index.css
@@ -25,10 +29,11 @@ const Hero = () => {
         </div>
         <div className="relative px-10 text-black">
           <div className="absolute inset-0 border-t-2" />
-          <div className="py-12 sm:py-16 text-end">
+          <div className="py-5 sm:py-8 text-end">
             <p className="font-light uppercase value-text-responsive">
-              I help growing brands and <br /> startups gain an unfair advantage
-              through <br /> premium results driven webs/apps
+              From concept to deployment, I deliver web experiences <br />
+              that give brands and startups a competitive <br />
+              edge in the digital world
             </p>
           </div>
         </div>

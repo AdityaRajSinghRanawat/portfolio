@@ -87,6 +87,35 @@
   font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Amiamie-Round";
+  src: url("/fonts/otf/Amiamie-BlackItalicRound.otf") format("opentype"),
+    url("/fonts/ttf/Amiamie-BlackItalicRound.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* zen-antique-soft-japanese-400-normal */
+@font-face {
+  font-family: 'Zen-Antique-Soft';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(@fontsource/zen-antique-soft/files/zen-antique-soft-japanese-400-normal.woff2) format('woff2'), url(@fontsource/zen-antique-soft/files/zen-antique-soft-japanese-400-normal.woff) format('woff');
+}
+
+/* kaushan-script-latin-400-normal */
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(@fontsource/kaushan-script/files/kaushan-script-latin-400-normal.woff2) format('woff2'), url(@fontsource/kaushan-script/files/kaushan-script-latin-400-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
 @theme {
   --color-primary: #e5e5e0;
   --color-DarkLava: #393632;
@@ -94,6 +123,8 @@
   --color-gold: #cfa355;
   --font-amiamie: "Amiamie", sans-serif;
   --font-amiamie-round: "Amiamie-Round", sans-serif;
+  --font-zen-antique-soft: "Zen-Antique-Soft", serif;
+  --font-kaushan-script: "Kaushan Script", cursive;
 
   --animate-marquee: marquee 40s infinite linear;
   @keyframes marquee {
@@ -112,26 +143,29 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: var(--font-amiamie);
+  user-select: none;
 }
 
 @utility clip-path {
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
 }
 
-{/*
+ {
+  /*
   You can use "leading" class to set line-height.
   For example, "leading-6" sets line-height to 1.5rem.
   
   But it was causing issues with text overflow in some cases.
   So, I have removed it from the utility classes.
-*/}
+*/
+}
 
 @utility banner-text-responsive {
   @apply text-3xl sm:text-5xl lg:text-7xl;
 }
 
 @utility value-text-responsive {
-  @apply text-2xl md:text-[26px] lg:text-[32px];
+  @apply text-xl sm:text-2xl lg:text-3xl;
 }
 
 @utility marquee-text-responsive {
