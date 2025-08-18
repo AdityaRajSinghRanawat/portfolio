@@ -123,8 +123,8 @@
   --color-gold: #cfa355;
   --font-amiamie: "Amiamie", sans-serif;
   --font-amiamie-round: "Amiamie-Round", sans-serif;
-  --font-zen-antique-soft: "Zen-Antique-Soft", serif;
-  --font-kaushan-script: "Kaushan Script", cursive;
+  --font-zen-antique-soft: "Zen-Antique-Soft", sans-serif;
+  --font-kaushan-script: "Kaushan Script", sans-serif;
 
   --animate-marquee: marquee 40s infinite linear;
   @keyframes marquee {
@@ -144,6 +144,7 @@ body {
   overflow-x: hidden;
   font-family: var(--font-amiamie);
   user-select: none;
+  
 }
 
 @utility clip-path {
@@ -161,11 +162,11 @@ body {
 }
 
 @utility banner-text-responsive {
-  @apply text-3xl sm:text-5xl lg:text-7xl;
+  @apply text-2xl sm:text-4xl lg:text-6xl;
 }
 
 @utility value-text-responsive {
-  @apply text-xl sm:text-2xl lg:text-3xl;
+  @apply text-lg sm:text-xl lg:text-2xl;
 }
 
 @utility marquee-text-responsive {

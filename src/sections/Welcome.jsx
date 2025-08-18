@@ -67,7 +67,7 @@ const Welcome = ({ onStartProp }) => {
           </div>
           <div
             ref={lineRef}
-            className="w-[80%] h-0.5 bg-gold/80 rounded-full"
+            className="w-[85%] h-0.5 bg-gold/80 rounded-full"
           ></div>
           <div className=" italic font-medium md:text-2xl sm:text-xl text-md text-white/80 ">
             Let's start the <span className="text-gold">journey</span>.
