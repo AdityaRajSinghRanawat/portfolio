@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./sections/Navbar";
 import Welcome from "./sections/Welcome";
 import Hero from "./sections/Hero";
+import ServiceSummary from "./sections/ServiceSummary";
 
 const App = () => {
   const [started, setStarted] = useState(false);
@@ -36,9 +37,10 @@ const App = () => {
           */}
           <Navbar />
           <Hero />
+          <ServiceSummary/>
 
-          <section id="services" className="h-[200vh] bg-red-100" />
           <section id="about" className="h-[200vh] bg-blue-100" />
+          <section id="work" className="h-[200vh] bg-red-100" />
         </div>
       )}
     </>
