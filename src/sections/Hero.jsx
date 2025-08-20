@@ -43,7 +43,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="flex flex-col justify-end min-h-[100dvh] py-2">
+    <section id="home" className="flex flex-col justify-end min-h-[100dvh]">
       <div ref={contextRef} className="relative z-10" style={{userSelect: "none"}}>
         {/* 
           We are using the rectangle clip path so 
@@ -91,7 +91,7 @@ const Hero = () => {
       */}
       <figure
         className="absolute inset-0 z-0"
-        style={{ width: "100dvw", height: "100dvh" }}
+        style={{ width: "100dvw", height: "100dvh"}}
       >
         {/*
           Camera(position, fov, near, far)
