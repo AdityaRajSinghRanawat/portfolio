@@ -39,8 +39,10 @@ const App = () => {
           <Hero />
           <ServiceSummary/>
 
-          <section id="about" className="h-[200vh] bg-blue-100" />
-          <section id="work" className="h-[200vh] bg-red-100" />
+          <section id="services" className="h-[200vh] bg-green-300" />
+          <section id="about" className="h-[200vh] bg-blue-300" />
+          <section id="work" className="h-[200vh] bg-red-300" />
+          <section id="contact" className="h-[200vh] bg-purple-300" />
         </div>
       )}
     </>

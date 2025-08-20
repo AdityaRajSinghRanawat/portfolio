@@ -54,15 +54,16 @@ const Welcome = ({ onStartProp }) => {
   }
   return (
     <>
-      <div
+      <section
+        id="welcome"
         ref={introRef}
-        className="fixed inset-0 bg-black flex flex-col items-center justify-center text-center gap-6"
+        className="fixed h-[100dvh] w-[100dvw] overflow-hidden inset-0 bg-black flex flex-col items-center justify-center text-center gap-6"
       >
         <div
           ref={welcomeTextRef}
           className="text-white mb-4 flex flex-col gap-2 justify-center items-center "
         >
-          <div className="font-kaushan-script md:text-9xl sm:text-7xl text-5xl text-gold">
+          <div className="font-kaushan-script md:text-9xl sm:text-7xl text-6xl text-gold">
             Welcome!
           </div>
           <div
@@ -76,11 +77,11 @@ const Welcome = ({ onStartProp }) => {
         <div
           ref={startButtonRef}
           onClick={startSite}
-          className=" md:py-4 sm:py-3 py-2 md:text-2xl sm:text-xl text-md md:px-16 sm:px-12 px-8 font-bold border-2 border-white/80 text-white/80 rounded-full cursor-pointer hover:bg-white/10 hover:border-gold hover:text-gold transition-colors duration-300"
+          className=" md:py-5 sm:py-4 py-3 md:text-2xl sm:text-xl text-md md:px-18 sm:px-16 px-12 font-bold border-2 border-white/80 text-white/80 rounded-full cursor-pointer hover:bg-white/10 hover:border-gold hover:text-gold transition-colors duration-300"
         >
           Start
         </div>
-      </div>
+      </section>
     </>
   );
 };
