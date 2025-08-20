@@ -51,7 +51,7 @@ const ServiceSummary = () => {
         id="title-service-2"
         className="flex items-center justify-center gap-3 translate-x-10 sm:translate-x-2 md:translate-x-12 lg:translate-x-16"
       >
-        <p className="font-normal">Web Apps</p>
+        <p className="font-normal italic">Web Apps</p>
         <div className="bg-gold responsive-line" />
         <p>Deployment</p>
       </div>
@@ -64,14 +64,14 @@ const ServiceSummary = () => {
         <div className="bg-gold responsive-line" />
         <p className="italic">Frontends</p>
         <div className="bg-gold responsive-line" />
-        <p>Scalability</p>
+        <p className="font-normal">Scalability</p>
       </div>
 
       <div
         id="title-service-4"
         className="translate-x-10 sm:translate-x-15 md:translate-x-24 lg:translate-x-88"
       >
-        <p>Databases</p>
+        <p className="font-normal">Databases</p>
       </div>
     </section>
   );
