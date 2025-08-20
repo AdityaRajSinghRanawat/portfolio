@@ -43,7 +43,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="flex flex-col justify-end min-h-screen">
+    <section id="home" className="flex flex-col justify-end min-h-[100dvh] py-2">
       <div ref={contextRef} className="relative z-10" style={{userSelect: "none"}}>
         {/* 
           We are using the rectangle clip path so 
