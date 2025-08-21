@@ -3,6 +3,8 @@ import Navbar from "./sections/Navbar";
 import Welcome from "./sections/Welcome";
 import Hero from "./sections/Hero";
 import ServiceSummary from "./sections/ServiceSummary";
+import Services from "./sections/Services";
+import ReactLenis from "lenis/react";
 
 const App = () => {
   const [started, setStarted] = useState(false);
@@ -22,8 +24,9 @@ const App = () => {
 
       {!started && <Welcome onStartProp={startSite} />}
       {started && (
-        <div
-          className={`transition-opacity duration-1000 ${
+        <ReactLenis
+          root
+          className={`relative transition-opacity duration-1000 ${
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -35,15 +38,16 @@ const App = () => {
             className={`opacity-${visible ? "100" : "0"} transition-opacity duration-700`}
 
           */}
+
           <Navbar />
           <Hero />
-          <ServiceSummary/>
+          <ServiceSummary />
+          <Services />
 
-          <section id="services" className="h-[200vh] bg-green-300" />
           <section id="about" className="h-[200vh] bg-blue-300" />
           <section id="work" className="h-[200vh] bg-red-300" />
           <section id="contact" className="h-[200vh] bg-purple-300" />
-        </div>
+        </ReactLenis>
       )}
     </>
   );

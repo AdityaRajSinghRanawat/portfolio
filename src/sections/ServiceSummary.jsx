@@ -13,12 +13,12 @@ const ServiceSummary = () => {
     gsap.to("#title-service-1", {
       xPercent: 30,
       scrollTrigger: {
-        trigger: "service-summary",
+        trigger: "#service-summary",
         scrub: true,
       },
     });
     gsap.to("#title-service-2", {
-      xPercent: -20,
+      xPercent: -13,
       scrollTrigger: {
         trigger: "#service-summary",
         scrub: true,
@@ -58,7 +58,7 @@ const ServiceSummary = () => {
 
       <div
         id="title-service-3"
-        className="flex items-center justify-center gap-3 -translate-x-10 sm:-translate-x-20 md:-translate-x-24 lg:-translate-x-48"
+        className="flex items-center justify-center gap-3 -translate-x-12 sm:-translate-x-20 md:-translate-x-24 lg:-translate-x-48"
       >
         <p>UI/UX</p>
         <div className="bg-gold responsive-line" />
