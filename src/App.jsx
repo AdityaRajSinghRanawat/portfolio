@@ -24,13 +24,13 @@ const App = () => {
 
       {!started && <Welcome onStartProp={startSite} />}
       {started && (
-        <ReactLenis
-          root
+        <div
           className={`relative transition-opacity duration-1000 ${
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
-          {/*
+          <ReactLenis root>
+            {/*
             Tailwind does not support dynamic class names like opacity-${value}
             
             so this does not work:-
@@ -39,15 +39,16 @@ const App = () => {
 
           */}
 
-          <Navbar />
-          <Hero />
-          <ServiceSummary />
-          <Services />
+            <Navbar />
+            <Hero />
+            <ServiceSummary />
+            <Services />
 
-          <section id="about" className="h-[200vh] bg-blue-300" />
-          <section id="work" className="h-[200vh] bg-red-300" />
-          <section id="contact" className="h-[200vh] bg-purple-300" />
-        </ReactLenis>
+            <section id="about" className="h-[200vh] bg-blue-300" />
+            <section id="work" className="h-[200vh] bg-red-300" />
+            <section id="contact" className="h-[200vh] bg-purple-300" />
+          </ReactLenis>
+        </div>
       )}
     </>
   );

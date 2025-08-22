@@ -13,7 +13,7 @@ const Welcome = ({ onStartProp }) => {
     tl.current = gsap
       .timeline({ defaults: { ease: "power2.out" } })
       .from(welcomeTextRef.current, {
-        delay: 1,
+        delay: 2,
         autoAlpha: 0,
         y: -30,
         duration: 0.8,

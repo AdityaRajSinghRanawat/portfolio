@@ -1,14 +1,18 @@
+import { useRef } from "react";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
-import {servicesData} from "../constants";
+import { servicesData } from "../constants";
 
 const Services = () => {
   const serviceSubtitle = "behind the scene, beyond the scene";
   const serviceTitle = "Service";
   const serviceText = `I bill secure high performance Full stack apps 
-  with smooth ux to drive growth not headache`;
+  with smooth ux to drive growth 
+  not headache`;
   const serviceTextColor = "text-white";
   const serviceClass = "mt-[50px]";
   const serviceWithScrollTrigger = true;
+
+  const serviceRef = useRef([]);
 
   return (
     <section
@@ -53,6 +57,54 @@ const Services = () => {
             making the margin appear to have no effect.
             Padding does not collapse, so it always pushes the content down.
         */}
+
+      {/*
+          const exampleRef = useRef(null);
+          console.log(exampleRef);
+
+          Output:- 
+          { 
+            current: {
+              current: null
+              prototype: Object
+            }
+          }
+
+
+          When we use this constant in any element:-
+          <div ref={exampleRef}></div>
+
+          Output:- 
+          { 
+            current: {
+              current: <div>...</div>
+              prototype: Object
+            }
+          }
+
+
+          When we use function in ref={} react understand that we want to 
+          point to the current element:-
+          
+          <div ref={(el) => (exampleRef.current = el)}></div>
+          
+          Output:- 
+          { 
+            current: {
+              current: <div>...</div>
+              prototype: Object
+            }
+          }
+
+
+          So evetually we are just updating this constant 
+          exampleRef which is transformed into a object 
+          because of useRef hook
+        */}
+      {servicesData.map((service, index) => (
+        <div key={index} ref={(el) => (serviceRef.current[index] = el)} 
+        className="sticky px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"></div>
+      ))}
     </section>
   );
 };
