@@ -28,7 +28,7 @@ const AnimatedHeaderSection = ({
         :  undefined ,
     });
     tl.from(contextRef.current, {
-      y: "50dvh",
+      y: "50vh",
       duration: 1,
       ease: "circ.out",
     });
@@ -78,7 +78,7 @@ const AnimatedHeaderSection = ({
         </div>
       </div>
 
-      <div className="relative px-10 ">
+      <div className="relative px-10">
         <div className="absolute inset-0 border-t-2" />
         <div className="py-5 sm:py-8 text-end">
           <AnimatedTextLines

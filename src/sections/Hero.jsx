@@ -34,8 +34,9 @@ const Hero = () => {
   );
   const heroTitle = "Aditya Raj Singh Ranawat";
   const heroText = `From concept to deployment, I deliver web experiences
-    that give brands and startups a competitive
-    edge in the digital world`;
+  that give brands and startups a competitive
+  edge in the digital world`;
+  
   const heroTextColor = "text-black";
   
 
