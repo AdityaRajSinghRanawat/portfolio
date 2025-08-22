@@ -36,12 +36,12 @@ const Hero = () => {
   const heroText = `From concept to deployment, I deliver web experiences
   that give brands and startups a competitive
   edge in the digital world`;
-  
+
   const heroTextColor = "text-black";
   
 
   return (
-    <section id="home" className="flex flex-col justify-end min-h-[100vh]">
+    <section id="home" className="flex flex-col justify-end min-h-[100dvh]">
       <AnimatedHeaderSection subTitle={heroSubtitle} title={heroTitle} text={heroText} textColor={heroTextColor} />
       {/* 
           npm i three @react-three/fiber @react-three/drei react-responsive maath 
