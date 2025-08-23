@@ -102,8 +102,22 @@ const Services = () => {
           because of useRef hook
         */}
       {servicesData.map((service, index) => (
-        <div key={index} ref={(el) => (serviceRef.current[index] = el)} 
-        className="sticky px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"></div>
+        <div
+          key={index}
+          ref={(el) => (serviceRef.current[index] = el)}
+          className="sticky px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"
+        >
+          <div className="flex items-center justify-between gap-4 font-light">
+            <div className="flex flex-col gap-6">
+              <h2 className="text-4xl lg:text-5xl">
+                {service.title}
+              </h2>
+              <p className="text-xl lg:text-xl leading-relaxed tracking-widest">
+                {service.description}
+              </p>
+            </div>
+          </div>
+        </div>
       ))}
     </section>
   );

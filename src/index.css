@@ -181,7 +181,7 @@ body {
 }
 
 @utility contact-text-responsive {
-  @apply text-2xl sm:text-5xl md:text-6xl lg:text-8xl;
+  @apply text-4xl sm:text-5xl md:text-6xl lg:text-8xl;
 }
 
 @utility responsive-line {

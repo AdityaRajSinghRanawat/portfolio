@@ -51,7 +51,7 @@ const ServiceSummary = () => {
         id="title-service-2"
         className="flex items-center justify-center gap-3 translate-x-10 sm:translate-x-2 md:translate-x-12 lg:translate-x-16"
       >
-        <p className="font-normal italic">Web Apps</p>
+        <p className="font-normal italic shrink-0">Web Apps</p>
         <div className="bg-gold responsive-line" />
         <p>Deployment</p>
       </div>
