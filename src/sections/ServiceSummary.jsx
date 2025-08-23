@@ -12,6 +12,7 @@ const ServiceSummary = () => {
   useGSAP(() => {
     gsap.to("#title-service-1", {
       xPercent: 30,
+      ease: "none",
       scrollTrigger: {
         trigger: "#service-summary",
         scrub: true,
@@ -19,6 +20,7 @@ const ServiceSummary = () => {
     });
     gsap.to("#title-service-2", {
       xPercent: -20,
+      ease: "none",
       scrollTrigger: {
         trigger: "#service-summary",
         scrub: true,
@@ -26,6 +28,7 @@ const ServiceSummary = () => {
     });
     gsap.to("#title-service-3", {
       xPercent: 20,
+      ease: "none",
       scrollTrigger: {
         trigger: "#service-summary",
         scrub: true,
@@ -33,6 +36,7 @@ const ServiceSummary = () => {
     });
     gsap.to("#title-service-4", {
       xPercent: -30,
+      ease: "none",
       scrollTrigger: {
         trigger: "#service-summary",
         scrub: true,
@@ -42,7 +46,7 @@ const ServiceSummary = () => {
   return (
     <section
       id="service-summary"
-      className="relative mt-20 overflow-x-hidden font-light leading-snug text-center mb-42 contact-text-responsive"
+      className="relative pt-20 overflow-x-hidden font-light leading-snug text-center pb-42 contact-text-responsive"
     >
       <div id="title-service-1">
         <p>Creative Design</p>
