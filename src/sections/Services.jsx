@@ -126,7 +126,7 @@ const Services = () => {
         <div
           key={index}
           ref={(el) => (serviceRef.current[index] = el)}
-          className="sticky px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"
+          className="sticky px-5 sm:px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"
           style={
             isTableAndDesktop
               ? {

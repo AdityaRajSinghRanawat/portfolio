@@ -67,7 +67,7 @@ const About = () => {
         tailwindClass={aboutClass}
         withScrollTrigger={aboutWithScrollTrigger}
       />
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8 sm:gap-12 px-10 pb-16 text-xl md:text-2xl lg:text-3xl text-white/60 font-light tracking-wide">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8 sm:gap-12 px-5 sm:px-10 pb-16 text-xl md:text-2xl lg:text-3xl text-white/60 font-light tracking-wide">
         <img
           ref={imgRef}
           src="/images/my-photo.webp"

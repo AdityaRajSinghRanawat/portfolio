@@ -64,10 +64,10 @@ const AnimatedHeaderSection = ({
           className="flex flex-col justify-center gap-3 sm:gap-5"
         >
           {/* We used items-baseline here to align the text */}
-          <div className="md:text-xl font-light tracking-[0.5rem] uppercase px-10  flex flex-wrap items-baseline">
+          <div className="md:text-xl font-light tracking-[0.5rem] uppercase px-5 sm:px-10  flex flex-wrap items-baseline">
             {subTitle}
           </div>
-          <div className="px-10">
+          <div className="px-5 sm:px-10">
             {/*
                   banner-text-responsive is my custom class in index.css
                 */}
@@ -78,7 +78,7 @@ const AnimatedHeaderSection = ({
         </div>
       </div>
 
-      <div className="relative px-10">
+      <div className="relative px-5 sm:px-10">
         <div className="inset-0 border-t-2 mt-2" />
         <div className="py-5 sm:py-8 text-end">
           <AnimatedTextLines
