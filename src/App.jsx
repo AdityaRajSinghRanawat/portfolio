@@ -6,6 +6,7 @@ import ServiceSummary from "./sections/ServiceSummary";
 import Services from "./sections/Services";
 import ReactLenis from "lenis/react";
 import About from "./sections/About";
+import gsap from "gsap";
 
 const App = () => {
   const [started, setStarted] = useState(false);
@@ -15,6 +16,10 @@ const App = () => {
     setStarted(true);
     setTimeout(() => setVisible(true), 1);
   };
+
+  useEffect(()=>{
+    gsap.ticker.lagSmoothing(0);
+  }, [])
 
   return (
     <>

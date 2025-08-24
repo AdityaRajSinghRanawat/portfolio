@@ -41,14 +41,14 @@ const Hero = () => {
   
 
   return (
-    <section id="home" className="flex flex-col justify-end min-h-[100dvh]">
+    <section id="home" className="flex flex-col justify-end h-[90vh] lg:h-[100vh]">
       <AnimatedHeaderSection subTitle={heroSubtitle} title={heroTitle} text={heroText} textColor={heroTextColor} />
       {/* 
           npm i three @react-three/fiber @react-three/drei react-responsive maath 
       */}
       <figure
         className="absolute inset-0 z-0"
-        style={{ width: "100dvw", height: isMobile ? "80dvh" : "100dvh" }}
+        style={{ width: "100vw", height: isTablet ? "70vh" : "100vh" }}
       >
         {/*
           Camera(position, fov, near, far)
@@ -68,9 +68,9 @@ const Hero = () => {
         >
           <ambientLight intensity={0.5} />
           <Float speed={1.5}>
-            <Planet scale={isMobile ? 0.5 : isTablet ? 0.7 : 1} />
+            <Planet scale={isMobile ? 0.5 : isTablet ? 0.95 : 1} />
           </Float>
-          <Environment resolution={256}>
+          <Environment resolution={64}>
             <group rotation={[-Math.PI / 3, 4, 1]}>
               <Lightformer
                 form={"circle"}
