@@ -35,13 +35,13 @@ const About = () => {
       scale: 0.85,
       scrollTrigger: {
         trigger: "#about",
-        start: "bottom bottom",
-        end: "bottom top",
+        start: "bottom 80%",
+        end: "bottom 20%",
         scrub: true,
       },
       ease: "power1.in",
     });
-    
+
     {/* Please use 0% instead of 0, otherwise it will cause an error */}
     gsap.set(imgRef.current, {
       clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
