@@ -151,7 +151,7 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: var(--font-amiamie);
-  /* user-select: none; */
+  user-select: none;
 }
 
 @utility clip-path {

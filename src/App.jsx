@@ -5,6 +5,7 @@ import Hero from "./sections/Hero";
 import ServiceSummary from "./sections/ServiceSummary";
 import Services from "./sections/Services";
 import ReactLenis from "lenis/react";
+import About from "./sections/About";
 
 const App = () => {
   const [started, setStarted] = useState(false);
@@ -91,10 +92,9 @@ const App = () => {
             <Hero />
             <ServiceSummary />
             <Services />
-
-            <section id="about" className="h-[200vh] bg-blue-300" />
-            <section id="work" className="h-[200vh] bg-red-300" />
-            <section id="contact" className="h-[200vh] bg-purple-300" />
+            <About/>
+            <section id="work" className="h-[200vh] py-20" >WORK</section>
+            <section id="contact" className="h-[200vh] bg-orange-300" >CONTACT</section>
           </ReactLenis>
         </div>
       )}

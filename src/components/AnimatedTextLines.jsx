@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
-const AnimatedTextLines = ({ text, className }) => {
+const AnimatedTextLines = ({ text, className, linesClassName }) => {
   const containerRef = useRef(null);
   const lineRefs = useRef([]);
 
@@ -76,15 +76,15 @@ const AnimatedTextLines = ({ text, className }) => {
         */
         }
         return (
-          <span
+          <p
             key={index}
             ref={(el) => {
               return (lineRefs.current[index] = el);
             }}
-            className="block text-pretty leading-relaxed"
+            className = {`block text-pretty leading-relaxed ${linesClassName}`}
           >
             {line}
-          </span>
+          </p>
         );
       })}
     </div>

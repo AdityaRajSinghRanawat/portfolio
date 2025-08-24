@@ -1,78 +1,79 @@
 // index.js
 export const servicesData = [
   {
-    title: "FullStack Development",
+    title: "Frontend Development & UI/UX",
     description:
-      "Your business deserves a fast, secure, and future-proof digital foundation. I develop custom web apps with clean architecture, optimized databases, and seamless integrations—ensuring reliability at every layer.",
+      "I design and develop modern, responsive, and engaging user interfaces. With a strong eye for detail, I combine performance with design to deliver experiences that are both beautiful and intuitive.",
     items: [
       {
-        title: "Backend Engineering",
-        description: "(REST/GraphQL APIs, Microservices, Auth Systems)",
+        title: "Interactive Interfaces",
+        description:
+          "(React.js, Tailwind CSS, GSAP, Framer Motion, ScrollTrigger)",
       },
       {
-        title: "Frontend Excellence",
-        description: "(React, Vue, TypeScript, Interactive UI/UX)",
+        title: "Pixel-Perfect Design",
+        description: "(Figma to Code, Responsive Layouts, Webflow)",
       },
       {
-        title: "Database Design",
-        description: "(SQL/NoSQL Optimization, Scalable Structures)",
+        title: "Smooth User Experience",
+        description: "(Animations, Transitions, Accessibility)",
       },
     ],
   },
   {
-    title: "DevOps & Cloud Solutions",
+    title: "Full-Stack Development",
     description:
-      "Deploying software shouldn't be a gamble. I automate infrastructure, enforce security, and leverage cloud platforms (AWS/Azure) to keep your app running smoothly—24/7, at any scale.",
+      "Beyond the interface, I build complete web applications with reliable backends and efficient databases—delivering solutions that are functional and scalable.",
     items: [
       {
-        title: "CI/CD Pipelines",
-        description: "(GitHub Actions, Docker, Kubernetes)",
+        title: "Backend Logic",
+        description: "(Node.js, Express.js, REST APIs)",
       },
       {
-        title: "Server Management ",
-        description: "(Linux, Nginx, Load Balancing)",
+        title: "Database Management",
+        description: "(MongoDB, CRUD Operations, Data Modeling)",
       },
       {
-        title: "Performance Tuning",
-        description: "(Caching, Compression, Lighthouse 90+ Scores)",
+        title: "End-to-End Projects",
+        description: "(From design to deployment with modern tools)",
       },
     ],
   },
   {
-    title: "Security & Optimization",
+    title: "Web Animation & Creative Design",
     description:
-      "Slow or hacked apps destroy trust. I harden security (XSS/SQLI protection, OAuth) and optimize bottlenecks so your app stays fast, safe, and scalable as you grow.",
+      "I specialize in creating interactive, visually appealing websites that stand out. By blending motion design with clean code, I make websites feel alive and memorable.",
     items: [
       {
-        title: "Code Audits",
-        description: "(Refactoring, Tech Debt Cleanup)",
+        title: "3D & Motion Design",
+        description: "(Spline, GSAP, Framer Motion, Webflow Animations)",
       },
       {
-        title: "Pen Testing",
-        description: "(Vulnerability Assessments)",
+        title: "Brand Websites",
+        description: "(Agency Sites, Portfolios, Product Showcases)",
       },
       {
-        title: "SEO Tech Stack",
-        description: "(SSR, Metadata, Structured Data)",
+        title: "Creative Storytelling",
+        description: "(Scroll-based Animations, Interactive Experiences)",
       },
     ],
   },
   {
-    title: "Web & Mobile Apps",
+    title: "Custom Web Solutions",
     description:
-      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web and mobile apps (React Native/Flutter) that users love—bridging design and functionality seamlessly.",
+      "Every project has unique needs. I provide tailored web solutions that focus on performance, usability, and creativity—helping businesses and individuals stand out online.",
     items: [
       {
-        title: "Cross-Platform Apps",
-        description: "(Single codebase for iOS/Android/Web)",
+        title: "Responsive Websites",
+        description: "(Mobile-first, Cross-browser Compatibility)",
       },
       {
-        title: "PWAs",
-        description: "(Offline mode, Push Notifications)",
+        title: "E-Commerce Features",
+        description: "(Product Pages, Cart, Payment Gateways)",
       },
       {
-        title: "E-Commerce",
-        description: "(Checkout flows, Payment Gateways, Inventory APIs)",
+        title: "API Integrations",
+        description: "(Unsplash API, Maps, Third-Party Services)",
       },
     ],
   },
@@ -171,6 +172,7 @@ export const projects = [
     ],
   },
 ];
+
 export const socials = [
   {
     name: "LinkedIn",

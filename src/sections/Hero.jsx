@@ -13,8 +13,8 @@ const Hero = () => {
   {
     /* useMediaQuery = this hook returns true or false */
   }
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-  const isTablet = useMediaQuery({ maxWidth: 1023 });
+  const isMobile = useMediaQuery({ maxWidth: "767px" });
+  const isTablet = useMediaQuery({ maxWidth: "1024px" });
 
   {
     /*
