@@ -108,7 +108,15 @@ const Hero = () => {
               </group>
             </Environment>
           </Suspense>
-          
+          <OrbitControls
+            enablePan={false}
+            enableZoom={false}
+            /* 30 degrees (top to 30) */
+            minPolarAngle={Math.PI / 6}
+            /* 120 degrees (top to 120) */
+            maxPolarAngle={(2 * Math.PI) / 3}
+            /* difference = 120 - 30 = 90 (move up and down) */
+          />
         </Canvas>
       </figure>
     </section>
