@@ -93,7 +93,7 @@ const App = () => {
 
           */}
 
-            <Navbar />
+            
             <Hero />
             <ServiceSummary />
             <Services />
