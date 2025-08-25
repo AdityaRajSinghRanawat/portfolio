@@ -3,7 +3,7 @@ import { contact, socials } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link } from "react-scroll";
-import MusicBox from "../components/MusicBox";
+import MusicBox from "./MusicBox";
 
 const Navbar = () => {
   {
