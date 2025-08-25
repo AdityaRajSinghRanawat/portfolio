@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { invalidate } from "@react-three/fiber";
 
 {
   /*
@@ -56,7 +55,6 @@ const Welcome = ({ onStartProp }) => {
       ease: "power3.inOut",
       onComplete: () => {
         onStartProp();
-        invalidate();
       },
     });
   };
