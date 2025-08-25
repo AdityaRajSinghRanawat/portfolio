@@ -7,6 +7,7 @@ import Services from "./sections/Services";
 import ReactLenis from "lenis/react";
 import About from "./sections/About";
 import gsap from "gsap";
+import BackgroundModelCanvas from "./components/BackgroundModelCanvas";
 
 const App = () => {
   const [started, setStarted] = useState(false);
@@ -17,9 +18,9 @@ const App = () => {
     setTimeout(() => setVisible(true), 1);
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     gsap.ticker.lagSmoothing(0);
-  }, [])
+  }, []);
 
   return (
     <>
@@ -29,7 +30,7 @@ const App = () => {
       */}
 
       {!started && <Welcome onStartProp={startSite} />}
-      
+
       {/* 
         We need to use lenis inside div to make it work
 
@@ -83,6 +84,7 @@ const App = () => {
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
+          <BackgroundModelCanvas />
           <ReactLenis root>
             {/*
             Tailwind does not support dynamic class names like opacity-${value}
@@ -96,9 +98,13 @@ const App = () => {
             <Hero />
             <ServiceSummary />
             <Services />
-            <About/>
-            <section id="work" className="h-[200vh] py-20" >WORK</section>
-            <section id="contact" className="h-[200vh] bg-orange-300" >CONTACT</section>
+            <About />
+            <section id="work" className="h-[200vh] py-20">
+              WORK
+            </section>
+            <section id="contact" className="h-[200vh] bg-orange-300">
+              CONTACT
+            </section>
           </ReactLenis>
         </div>
       )}

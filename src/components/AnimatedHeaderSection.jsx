@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 {
   /*
-        use withScrollTrigger=false as initial value    
-    */
+    use withScrollTrigger=false as initial value    
+  */
 }
 const AnimatedHeaderSection = ({
   subTitle,
@@ -27,7 +27,7 @@ const AnimatedHeaderSection = ({
         ? {
             trigger: contextRef.current,
           }
-        :  undefined ,
+        : undefined,
     });
     tl.from(contextRef.current, {
       y: "50vh",
