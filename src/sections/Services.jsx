@@ -21,7 +21,23 @@ const Services = () => {
 
   const serviceRef = useRef([]);
 
-  
+  useGSAP(() => {
+    serviceRef.current.forEach((el) => {
+      if (!el) {
+        return;
+      }
+
+      gsap.from(el, {
+        y: 200,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 90%",
+        },
+        duration: 1,
+        ease: "circ.out",
+      });
+    });
+  });
 
   return (
     <section id="services" className="min-h-screen bg-black rounded-t-4xl ">
@@ -112,14 +128,17 @@ const Services = () => {
         <div
           key={index}
           ref={(el) => (serviceRef.current[index] = el)}
-          className="sticky px-5 sm:px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"
+          className="px-5 sm:px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"
           style={
             isTableAndDesktop
               ? {
+                  position: "sticky",
                   top: `calc(10vh + ${index * 5}em)`,
                   marginBottom: `${(servicesData.length - index - 1) * 5}rem`,
                 }
-              : { top: 0 }
+              : {
+                position: "static"
+              }
           }
         >
           <div className="flex items-center justify-between gap-4 font-light">
