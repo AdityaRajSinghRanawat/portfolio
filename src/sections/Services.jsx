@@ -4,6 +4,8 @@ import { servicesData } from "../constants";
 import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
   const serviceSubtitle = "behind the scene, beyond the scene";
@@ -19,23 +21,7 @@ const Services = () => {
 
   const serviceRef = useRef([]);
 
-  useGSAP(() => {
-    serviceRef.current.forEach((el) => {
-      if (!el) {
-        return;
-      }
-
-      gsap.from(el, {
-        y: 200,
-        scrollTrigger: {
-          trigger: el,
-          start: "top 90%",
-        },
-        duration: 1,
-        ease: "circ.out",
-      });
-    });
-  });
+  
 
   return (
     <section id="services" className="min-h-screen bg-black rounded-t-4xl ">

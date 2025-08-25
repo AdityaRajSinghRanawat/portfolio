@@ -2,6 +2,8 @@ import { useRef } from "react";
 import AnimatedTextLines from "../components/AnimatedTextLines";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 
 {
   /*
