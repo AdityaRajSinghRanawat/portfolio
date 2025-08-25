@@ -42,7 +42,7 @@ const ServiceSummary = () => {
   return (
     <section
       id="service-summary"
-      className="relative mt-60 overflow-x-hidden font-light leading-snug text-center mb-100 contact-text-responsive"
+      className="relative mt-20 overflow-x-hidden font-light leading-snug text-center mb-42 contact-text-responsive"
     >
       <div id="title-service-1">
         <p>Creative Design</p>

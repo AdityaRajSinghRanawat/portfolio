@@ -128,17 +128,14 @@ const Services = () => {
         <div
           key={index}
           ref={(el) => (serviceRef.current[index] = el)}
-          className="px-5 sm:px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"
+          className="sticky px-5 sm:px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"
           style={
             isTableAndDesktop
               ? {
-                  position: "sticky",
                   top: `calc(10vh + ${index * 5}em)`,
                   marginBottom: `${(servicesData.length - index - 1) * 5}rem`,
                 }
-              : {
-                position: "static"
-              }
+              : { top: 0 }
           }
         >
           <div className="flex items-center justify-between gap-4 font-light">
