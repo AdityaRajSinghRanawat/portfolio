@@ -38,7 +38,7 @@ const About = () => {
       scrollTrigger: {
         trigger: "#about",
         start: "bottom 80%",
-        end: "bottom 20%",
+        end: "bottom 0%",
         scrub: true,
       },
       ease: "power1.in",

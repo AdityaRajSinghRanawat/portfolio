@@ -42,7 +42,7 @@ const ServiceSummary = () => {
   return (
     <section
       id="service-summary"
-      className="relative mt-20 overflow-x-hidden font-light leading-snug text-center mb-42 contact-text-responsive"
+      className="relative flex flex-col items-center justify-center min-h-screen lg:min-h-[200vh] overflow-x-hidden font-light leading-snug text-center contact-text-responsive"
     >
       <div id="title-service-1">
         <p>Creative Design</p>
