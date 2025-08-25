@@ -83,7 +83,7 @@ const App = () => {
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
-   
+          <ReactLenis root>
             {/*
             Tailwind does not support dynamic class names like opacity-${value}
             
@@ -99,7 +99,7 @@ const App = () => {
             <About/>
             <section id="work" className="h-[200vh] py-20" >WORK</section>
             <section id="contact" className="h-[200vh] bg-orange-300" >CONTACT</section>
-        
+          </ReactLenis>
         </div>
       )}
     </>
