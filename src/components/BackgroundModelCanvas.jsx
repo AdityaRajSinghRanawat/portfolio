@@ -32,17 +32,26 @@ const BackgroundModelCanvas = () => {
       <Canvas
         shadows
         camera={{ position: [0, 0, 10], fov: 17.5, near: 1, far: 20 }}
-        frameloop= {isTablet ? "demand" : "always"}
+        frameloop={isTablet ? "demand" : "always"}
         dpr={[1, 1.5]}
       >
         <ambientLight intensity={0.5} />
         <Suspense fallback={null}>
-          <Float>
+          {/* check if its tablet/mobile or desktop */}
+          {isTablet ? (
             <Planet
               scale={isMobile ? 0.5 : isTablet ? 0.95 : 1}
               rotation={[0, Math.PI, 0]}
             />
-          </Float>
+          ) : (
+            <Float>
+              <Planet
+                scale={isMobile ? 0.5 : isTablet ? 0.95 : 1}
+                rotation={[0, Math.PI, 0]}
+              />
+            </Float>
+          )}
+
           <Environment resolution={64}>
             <group rotation={[Math.PI / 3, 4 + Math.PI, 1]}>
               <Lightformer
