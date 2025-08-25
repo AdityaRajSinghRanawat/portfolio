@@ -32,6 +32,8 @@ const BackgroundModelCanvas = () => {
       <Canvas
         shadows
         camera={{ position: [0, 0, 10], fov: 17.5, near: 1, far: 20 }}
+        frameloop= {isTablet ? "demand" : "always"}
+        dpr={[1, 1.5]}
       >
         <ambientLight intensity={0.5} />
         <Suspense fallback={null}>

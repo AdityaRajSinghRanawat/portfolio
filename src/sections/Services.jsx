@@ -14,12 +14,30 @@ const Services = () => {
   with smooth ux to drive growth 
   not headache`;
   const serviceTextColor = "text-white";
-  const serviceClass = "pt-[50px] mb-[80px]";
+  const serviceClass = "pt-[50px]";
   const serviceWithScrollTrigger = true;
 
   const isTableAndDesktop = useMediaQuery({ minWidth: "768px" });
 
   const serviceRef = useRef([]);
+
+  useGSAP(() => {
+    serviceRef.current.forEach((el) => {
+      if (!el) {
+        return;
+      }
+
+      gsap.from(el, {
+        y: 200,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 90%",
+        },
+        duration: 1,
+        ease: "circ.out",
+      });
+    });
+  });
 
   return (
     <section id="services" className="min-h-screen bg-black rounded-t-4xl ">
@@ -110,7 +128,7 @@ const Services = () => {
         <div
           key={index}
           ref={(el) => (serviceRef.current[index] = el)}
-          className="sticky px-5 sm:px-10 pt-6 pb-100 text-white bg-black border-t-2 border-white/30"
+          className="sticky px-5 sm:px-10 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"
           style={
             isTableAndDesktop
               ? {

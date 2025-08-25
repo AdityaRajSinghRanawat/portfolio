@@ -1,13 +1,9 @@
-
-
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
-
 
 const Hero = () => {
   {
     /* useMediaQuery = this hook returns true or false */
   }
-  
 
   {
     /*
@@ -46,7 +42,6 @@ const Hero = () => {
       {/* 
           npm i three @react-three/fiber @react-three/drei react-responsive maath 
       */}
-      
     </section>
   );
 };
