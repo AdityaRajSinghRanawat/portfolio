@@ -27,6 +27,7 @@ const Services = () => {
         return;
       }
 
+      
       gsap.from(el, {
         y: 200,
         scrollTrigger: {
