@@ -72,15 +72,16 @@ const Hero = () => {
           */}
         <Canvas
           shadows
-          camera={{ position: [0, 0, -10], fov: 17.5, near: 1, far: 20 }}
+          camera={{ position: [0, 0, 10], fov: 17.5, near: 1, far: 20 }}
         >
           <ambientLight intensity={0.5} />
           <Suspense fallback={null}>
+            
             <Float>
-              <Planet scale={isMobile ? 0.5 : isTablet ? 0.95 : 1} />
+              <Planet scale={isMobile ? 0.5 : isTablet ? 0.95 : 1} rotation={[0, Math.PI, 0]}/>
             </Float>
             <Environment resolution={64}>
-              <group rotation={[-Math.PI / 3, 4, 1]}>
+              <group rotation={[Math.PI / 3, 4 + Math.PI, 1]}>
                 <Lightformer
                   form={"circle"}
                   intensity={2}
@@ -111,6 +112,7 @@ const Hero = () => {
           <OrbitControls
             enablePan={false}
             enableZoom={false}
+            enableDamping={true}
             /* 30 degrees (top to 30) */
             minPolarAngle={Math.PI / 6}
             /* 120 degrees (top to 120) */

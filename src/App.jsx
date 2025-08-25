@@ -92,8 +92,7 @@ const App = () => {
             className={`opacity-${visible ? "100" : "0"} transition-opacity duration-700`}
 
           */}
-
-            
+            <Navbar />
             <Hero />
             <ServiceSummary />
             <Services />
