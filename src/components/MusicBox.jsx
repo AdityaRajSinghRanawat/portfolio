@@ -29,7 +29,7 @@ const MusicBox = ({ showMusicBurger }) => {
     <>
       {/* Music Burger */}
       <div
-        className="fixed z-50 flex items-center justify-center transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 left-10"
+        className="fixed z-50 flex items-center justify-center transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 left-5 sm:left-10"
         onClick={toggleMusic}
         style={
           showMusicBurger

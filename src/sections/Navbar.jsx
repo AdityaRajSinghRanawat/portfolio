@@ -3,7 +3,7 @@ import { contact, socials } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link } from "react-scroll";
-import MusicBox from "./MusicBox";
+import MusicBox from "../components/MusicBox";
 
 const Navbar = () => {
   {
@@ -279,9 +279,13 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      
+      {/* Music Burger  */}
       <MusicBox showMusicBurger={showBurger} />
+
+      {/* Navbar Burger */}
       <div
-        className="fixed z-50 flex flex-col items-center justify-center gap-2 transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 right-10"
+        className="fixed z-50 flex flex-col items-center justify-center gap-2 transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 right-5 sm:right-10 "
         onClick={toggleMenu}
         onMouseEnter={() => burgerColor(true)}
         onMouseLeave={() => burgerColor(false)}
