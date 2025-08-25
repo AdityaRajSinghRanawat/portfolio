@@ -1,6 +1,26 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { invalidate } from "@react-three/fiber";
+
+{
+  /*
+  
+  What is invalidate in React Three Fiber?
+
+  Normally, R3F keeps re-rendering the 3D scene every frame (60 fps) 
+  when frameloop="always".
+
+  But when you set frameloop="demand", R3F will only render 
+  when something changes.
+
+  If R3F doesn’t “know” that something changed (like when GSAP moves 
+  objects outside React’s control), the scene won’t update.
+
+  invalidate() is a function you can call to tell R3F: 
+  "Hey, something changed, please redraw the scene."  
+*/
+}
 
 const Welcome = ({ onStartProp }) => {
   const introRef = useRef(null);
@@ -36,6 +56,7 @@ const Welcome = ({ onStartProp }) => {
       ease: "power3.inOut",
       onComplete: () => {
         onStartProp();
+        invalidate();
       },
     });
   };

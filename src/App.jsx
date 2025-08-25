@@ -84,7 +84,7 @@ const App = () => {
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
-          <BackgroundModelCanvas />
+          
           <ReactLenis root>
             {/*
             Tailwind does not support dynamic class names like opacity-${value}

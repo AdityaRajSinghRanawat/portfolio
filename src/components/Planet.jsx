@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { invalidate } from "@react-three/fiber";
 
 {
   /* change "Model" to "Planet" */
@@ -22,6 +23,7 @@ export function Planet(props) {
       y: 5,
       duration: 3,
       ease: "circ.out",
+      onUpdate: invalidate,
     });
     tl.from(
       sphereContainer.current.rotation,
@@ -31,6 +33,7 @@ export function Planet(props) {
         z: -Math.PI,
         duration: 10,
         ease: "power1.inOut",
+        onUpdate: invalidate,
       },
       "-=25%"
     );
@@ -45,6 +48,7 @@ export function Planet(props) {
         z: 0,
         duration: 10,
         ease: "power1.inOut",
+        onUpdate: invalidate,
       },
       "<"
     );

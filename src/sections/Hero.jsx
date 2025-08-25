@@ -1,4 +1,5 @@
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
+import BackgroundModelCanvas from "../components/BackgroundModelCanvas";
 
 const Hero = () => {
   {
@@ -42,6 +43,7 @@ const Hero = () => {
       {/* 
           npm i three @react-three/fiber @react-three/drei react-responsive maath 
       */}
+      <BackgroundModelCanvas/>
     </section>
   );
 };
