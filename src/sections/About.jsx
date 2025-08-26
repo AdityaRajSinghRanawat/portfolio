@@ -52,7 +52,7 @@ const About = () => {
       scale: 0.85,
       scrollTrigger: {
         trigger: aboutSectionRef.current,
-        start: "bottom bottom",
+        start: "bottom 100%",
         end: "bottom 40%",
         scrub: true,
       },
