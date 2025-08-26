@@ -23,7 +23,7 @@ export const servicesData = [
   {
     title: "Full-Stack Development",
     description:
-      "Beyond the interface, I build complete web applications with reliable backends and efficient databases—delivering solutions that are functional and scalable.",
+      "Beyond the interface, I build complete web applications with reliable backends and efficient databases-delivering solutions that are functional and scalable.",
     items: [
       {
         title: "Backend Logic",
@@ -61,7 +61,7 @@ export const servicesData = [
   {
     title: "Custom Web Solutions",
     description:
-      "Every project has unique needs. I provide tailored web solutions that focus on performance, usability, and creativity—helping businesses and individuals stand out online.",
+      "Every project has unique needs. I provide tailored web solutions that focus on performance, usability, and creativity-helping businesses and individuals stand out online.",
     items: [
       {
         title: "Responsive Websites",
@@ -82,96 +82,99 @@ export const servicesData = [
 export const projects = [
   {
     id: 1,
-    name: "Mobile Accessories E-commerce",
+    name: "Photography Portfolio Platform",
     description:
-      "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
+      "Designed and launched a high-performance photography platform with a custom-built UI system in Tailwind CSS, achieving flawless mobile responsiveness and reusable design patterns adopted across 3+ projects.",
     href: "",
-    image: "/assets/projects/mobile-accessories-store.jpg",
+    image: "/assets/projects/photography.jpg",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "MongoDB" },
-      { id: 5, name: "Tailwind CSS" },
+      { id: 1, name: "HTML" },
+      { id: 2, name: "Tailwind CSS" },
     ],
   },
   {
     id: 2,
-    name: "Plant Shop E-commerce",
+    name: "Creative Web Agency Platform",
     description:
-      "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
+      "Built a professional-grade agency site that accelerated project delivery with scalable components and pixel-perfect layouts - a showcase of frontend engineering and modern branding combined.",
     href: "",
-    image: "/assets/projects/plant-shop.jpg",
+    image: "/assets/projects/web-agency.jpg",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Stripe API" },
-      { id: 4, name: "Tailwind CSS" },
+      { id: 1, name: "HTML" },
+      { id: 2, name: "Tailwind CSS" },
     ],
   },
   {
     id: 3,
-    name: "Apple Tech Marketplace",
+    name: "Fashion Branding Experience",
     description:
-      "An e-commerce platform for Apple products and accessories with deals and category filtering.",
+      "Engineered a branding website with conversion-focused UI and responsive design - transforming a concept into a polished product ready for presentation and market-level use.",
     href: "",
-    image: "/assets/projects/apple-tech-store.jpg",
+    image: "/assets/projects/branding.jpg",
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
-      { id: 1, name: "Blazor" },
-      { id: 2, name: "ASP.NET Core" },
-      { id: 3, name: "SQL Server" },
-      { id: 4, name: "Bootstrap" },
+      { id: 1, name: "HTML" },
+      { id: 2, name: "Tailwind CSS" },
     ],
   },
   {
     id: 4,
-    name: "Electronics & Gadgets Store",
+    name: "Image Search & Discovery Engine",
     description:
-      "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
+      "Developed a search engine–style web app powered by the Unsplash API, enabling access to 1M+ images with infinite scrolling and real-time loading - delivering a seamless UX comparable to modern search platforms.",
     href: "",
-    image: "/assets/projects/electronics-store.jpg",
+    image: "/assets/projects/image-search.jpg",
     bgImage: "/assets/backgrounds/poster.jpg",
     frameworks: [
-      { id: 1, name: "Vue.js" },
-      { id: 2, name: "Laravel" },
-      { id: 3, name: "MySQL" },
-      { id: 4, name: "SCSS" },
+      { id: 1, name: "JavaScript" },
+      { id: 2, name: "Unsplash API" },
     ],
   },
   {
     id: 5,
-    name: "Home Decor Marketplace",
+    name: "3D Product Visualization Website",
     description:
-      "A curated collection of designer home decor items, including furniture and artisan vases.",
+      "Created an immersive 3D product showcase using Webflow, Spline, and Figma - delivering interactive product rotations and next-gen visuals that mimic enterprise-level e-commerce experiences.",
     href: "",
-    image: "/assets/projects/home-decor-store.jpg",
+    image: "/assets/projects/water-bottle.jpg",
     bgImage: "/assets/backgrounds/table.jpg",
     frameworks: [
-      { id: 1, name: "Angular" },
-      { id: 2, name: "Firebase" },
-      { id: 3, name: "GraphQL" },
-      { id: 4, name: "Material UI" },
+      { id: 1, name: "Figma" },
+      { id: 2, name: "Webflow" },
+      { id: 3, name: "Spline" },
     ],
   },
   {
     id: 6,
-    name: "Digital Game Store",
+    name: "Amazon E-Commerce Clone System",
     description:
-      "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
+      "Engineered a large-scale e-commerce clone replicating Amazon’s multi-category system, with a custom UI library in pure HTML & CSS - demonstrating mastery of scalable architecture and UI engineering.",
     href: "",
-    image: "/assets/projects/game-store.jpg",
+    image: "/assets/projects/amazon-clone.jpg",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
-      { id: 1, name: "Svelte" },
-      { id: 2, name: "Node.js" },
-      { id: 3, name: "MongoDB" },
-      { id: 4, name: "Chakra UI" },
+      { id: 1, name: "HTML" },
+      { id: 2, name: "CSS" },
+    ],
+  },
+  {
+    id: 7,
+    name: "Spotify Music Streaming Clone",
+    description:
+      "Led a 4-member team to build a Spotify clone with full music player functionality (play, pause, skip). Delivered a polished, fully responsive UI - showcasing collaboration, product ownership, and strong frontend engineering.",
+    href: "",
+    image: "/assets/projects/spotify-clone.jpg",
+    bgImage: "/assets/backgrounds/window.jpg",
+    frameworks: [
+      { id: 1, name: "HTML" },
+      { id: 2, name: "CSS" },
+      { id: 3, name: "JavaScript" },
     ],
   },
 ];
+
 
 export const socials = [
   {

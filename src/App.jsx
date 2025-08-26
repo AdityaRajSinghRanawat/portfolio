@@ -7,7 +7,7 @@ import Services from "./sections/Services";
 import ReactLenis from "lenis/react";
 import About from "./sections/About";
 import gsap from "gsap";
-import BackgroundModelCanvas from "./components/BackgroundModelCanvas";
+import Work from "./sections/Work";
 
 const App = () => {
   const [started, setStarted] = useState(false);
@@ -99,9 +99,7 @@ const App = () => {
             <ServiceSummary />
             <Services />
             <About />
-            <section id="work" className="h-[200vh] py-20">
-              WORK
-            </section>
+            <Work/>
             <section id="contact" className="h-[200vh] bg-orange-300">
               CONTACT
             </section>

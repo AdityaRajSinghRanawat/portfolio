@@ -187,3 +187,7 @@ body {
 @utility responsive-line {
   @apply h-[2px] md:h-1 min-w-5 sm:min-w-10 md:min-w-18 lg:w-32 lg:min-w-32;
 }
+
+@utility work-text-responsive {
+  @apply text-2xl sm:text-3xl lg:text-4xl;
+}
