@@ -50,7 +50,6 @@ const About = () => {
   useGSAP(() => {
     gsap.to(aboutCardRef.current, {
       scale: 0.9,
-      transformOrigin: "top center",
       scrollTrigger: {
         trigger: aboutSectionRef.current,
         start: "bottom bottom",
