@@ -54,7 +54,7 @@ const About = () => {
         start: "bottom 100%",
         end: "bottom 40%",
         scrub: true,
-        
+        invalidateOnRefresh: true,
       },
       ease: "power1.in",
     });
@@ -72,7 +72,7 @@ const About = () => {
       ease: "power4.out",
       scrollTrigger: {
         trigger: imgRef.current,
-        invalidateOnRefresh: true,
+  
       },
     });
 
