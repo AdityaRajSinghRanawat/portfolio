@@ -17,7 +17,8 @@ const About = () => {
   const aboutWithScrollTrigger = true;
 
   const imgRef = useRef(null);
-  const aboutRef = useRef(null);
+  const aboutCardRef = useRef(null);
+  const aboutSectionRef = useRef(null);
 
   const descriptionText = `I'm Aditya Raj Singh Ranawat, a frontend and full-stack developer from Jaipur, India.
 
@@ -47,13 +48,14 @@ const About = () => {
   }
 
   useGSAP(() => {
-    gsap.to(aboutRef.current, {
+    gsap.to(aboutCardRef.current, {
       scale: 0.85,
       scrollTrigger: {
-        trigger: aboutRef.current,
+        trigger: aboutSectionRef.current,
         start: "bottom 100%",
         end: "bottom 40%",
         scrub: true,
+        invalidateOnRefresh: true,
       },
       ease: "power1.in",
     });
@@ -76,8 +78,8 @@ const About = () => {
   });
 
   return (
-    <section id="about" className="min-h-screen">
-      <div ref={aboutRef} className=" bg-black rounded-b-4xl">
+    <section id="about" ref={aboutSectionRef} className="min-h-screen">
+      <div ref={aboutCardRef} className=" bg-black rounded-b-4xl">
         <AnimatedHeaderSection
           subTitle={aboutSubtitle}
           title={aboutTitle}
