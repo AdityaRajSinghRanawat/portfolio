@@ -49,12 +49,12 @@ const About = () => {
 
   useGSAP(() => {
     gsap.to(aboutCardRef.current, {
-      scale: 0.85,
+      scale: 0.9,
       transformOrigin: "top center",
       scrollTrigger: {
         trigger: aboutSectionRef.current,
         start: "bottom bottom",
-        end: "bottom 40%",
+        end: "bottom top",
         scrub: true,
       },
       ease: "power1.in",
