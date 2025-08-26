@@ -50,11 +50,10 @@ const About = () => {
     gsap.to(aboutRef.current, {
       scale: 0.85,
       scrollTrigger: {
-        trigger: "#about",
+        trigger: aboutRef.current,
         start: "bottom 100%",
         end: "bottom 40%",
         scrub: true,
-        invalidateOnRefresh: true,
       },
       ease: "power1.in",
     });
@@ -72,11 +71,8 @@ const About = () => {
       ease: "power4.out",
       scrollTrigger: {
         trigger: imgRef.current,
-  
       },
     });
-
-    ScrollTrigger.refresh();
   });
 
   return (
