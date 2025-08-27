@@ -43,8 +43,8 @@ export function Planet(props) {
     tl.from(
       ringContainer.current.rotation,
       {
-        x: 0.8,
-        y: 0,
+        x: ((Math.PI*2)),
+        y: ((Math.PI*2)),
         z: 0,
         duration: 2,
         ease: "power1.inOut",
@@ -60,21 +60,12 @@ export function Planet(props) {
     <group ref={shapeContainer} {...props} dispose={null}>
       <group ref={sphereContainer}>
         <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Sphere.geometry}
-          material={materials["Material.002"]}
-          rotation={[0, 0, 0.741]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Sphere2.geometry}
-          material={materials["Material.001"]}
-          position={[0.647, 1.03, -0.724]}
-          rotation={[0, 0, 0.741]}
-          scale={0.223}
-        />
+        castShadow
+        receiveShadow
+        geometry={nodes.Sphere.geometry}
+        material={materials['Material.002']}
+        rotation={[0, 0, 0.741]}
+      />
       </group>
       <mesh
         ref={ringContainer}

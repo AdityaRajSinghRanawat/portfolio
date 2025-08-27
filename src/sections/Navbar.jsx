@@ -194,7 +194,7 @@ const Navbar = () => {
     <>
       <nav
         ref={navRef}
-        className="fixed z-50 flex flex-col justify-between w-[105dvw] h-[100dvh] px-5 sm:px-10 uppercase bg-black text-white/80 py-20 gap-y-10 md:w-1/2 md:left-1/2"
+        className="fixed z-50 flex flex-col justify-between w-[105vw] h-[100vh] px-5 sm:px-10 uppercase bg-black text-white/80 py-20 gap-y-10 md:w-1/2 md:left-1/2"
       >
         {/*text-white/80 = 80% opacity */}
         <div className="flex flex-col text-3xl gap-y-2 md:text-4xl lg:text-5xl">

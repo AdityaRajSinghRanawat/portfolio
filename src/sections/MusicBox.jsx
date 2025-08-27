@@ -46,6 +46,7 @@ const MusicBox = ({ showMusicBurger }) => {
           loop
           muted
           playsInline
+          preload="auto"
           className="w-full h-full rounded-full object-cover"
           style={{
             opacity: isPlaying ? 1 : 0.3,
@@ -57,7 +58,7 @@ const MusicBox = ({ showMusicBurger }) => {
           src="/music/website-background-song.mp3"
           loop
           autoPlay
-        
+          preload="auto"
           style={{ display: "none" }}
         ></audio>
       </div>
