@@ -224,7 +224,7 @@ const Navbar = () => {
                   */}
 
                   {/*
-                    we are going to replace the <a></a> tag with 
+                    we are going to replace the <a></a> tag with
                     react-scroll "link" tag to smooth scroll
                   
                     now we will also not use "href = {`#${section}`}"
@@ -279,7 +279,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      
+
       {/* Music Burger  */}
       <MusicBox showMusicBurger={showBurger} />
 
