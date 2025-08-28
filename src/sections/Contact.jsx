@@ -1,6 +1,11 @@
+import gsap from "gsap";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import Marquee from "../components/Marquee";
 import { contacts, socials } from "../constants";
+import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger);
+
 const Contact = () => {
   {
     /* Contact Header Constants */
@@ -27,6 +32,20 @@ const Contact = () => {
   const marqueeClass = "text-white bg-black";
   const marqueeIconClass = "text-white size-12";
 
+
+  useGSAP(() => {
+    gsap.from(".social-link", {
+      y: 100, 
+      opacity: 0,
+      delay: 0.5,
+      duration: 1,
+      stagger: 0.3,
+      ease: "back.out",
+      scrollTrigger: {
+        trigger: ".social-link",
+      },
+    })
+  }, []);
   return (
     <section id="contact" className="min-h-screen flex flex-col justify-between bg-black">
       <AnimatedHeaderSection
