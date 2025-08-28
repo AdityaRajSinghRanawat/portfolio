@@ -86,8 +86,8 @@ export const projects = [
     description:
       "Designed and launched a high-performance photography platform with a custom-built UI system in Tailwind CSS, achieving flawless mobile responsiveness and reusable design patterns adopted across 3+ projects.",
     href: "",
-    image: "/assets/projects/photography.jpg",
-    bgImage: "/assets/backgrounds/blanket.jpg",
+    image: "/assets/projects/photography.webp",
+    bgImage: "/assets/backgrounds/blanket.webp",
     frameworks: [
       { id: 1, name: "HTML" },
       { id: 2, name: "Tailwind CSS" },
@@ -99,8 +99,8 @@ export const projects = [
     description:
       "Built a professional-grade agency site that accelerated project delivery with scalable components and pixel-perfect layouts - a showcase of frontend engineering and modern branding combined.",
     href: "",
-    image: "/assets/projects/web-agency.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
+    image: "/assets/projects/web-agency.webp",
+    bgImage: "/assets/backgrounds/curtains.webp",
     frameworks: [
       { id: 1, name: "HTML" },
       { id: 2, name: "Tailwind CSS" },
@@ -112,8 +112,8 @@ export const projects = [
     description:
       "Engineered a branding website with conversion-focused UI and responsive design - transforming a concept into a polished product ready for presentation and market-level use.",
     href: "",
-    image: "/assets/projects/branding.jpg",
-    bgImage: "/assets/backgrounds/map.jpg",
+    image: "/assets/projects/branding.webp",
+    bgImage: "/assets/backgrounds/map.webp",
     frameworks: [
       { id: 1, name: "HTML" },
       { id: 2, name: "Tailwind CSS" },
@@ -125,8 +125,8 @@ export const projects = [
     description:
       "Developed a search engine–style web app powered by the Unsplash API, enabling access to 1M+ images with infinite scrolling and real-time loading - delivering a seamless UX comparable to modern search platforms.",
     href: "",
-    image: "/assets/projects/image-search.jpg",
-    bgImage: "/assets/backgrounds/poster.jpg",
+    image: "/assets/projects/image-search.webp",
+    bgImage: "/assets/backgrounds/poster.webp",
     frameworks: [
       { id: 1, name: "JavaScript" },
       { id: 2, name: "Unsplash API" },
@@ -138,8 +138,8 @@ export const projects = [
     description:
       "Created an immersive 3D product showcase using Webflow, Spline, and Figma - delivering interactive product rotations and next-gen visuals that mimic enterprise-level e-commerce experiences.",
     href: "",
-    image: "/assets/projects/water-bottle.jpg",
-    bgImage: "/assets/backgrounds/table.jpg",
+    image: "/assets/projects/water-bottle.webp",
+    bgImage: "/assets/backgrounds/table.webp",
     frameworks: [
       { id: 1, name: "Figma" },
       { id: 2, name: "Webflow" },
@@ -152,8 +152,8 @@ export const projects = [
     description:
       "Engineered a large-scale e-commerce clone replicating Amazon’s multi-category system, with a custom UI library in pure HTML & CSS - demonstrating mastery of scalable architecture and UI engineering.",
     href: "",
-    image: "/assets/projects/amazon-clone.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
+    image: "/assets/projects/amazon-clone.webp",
+    bgImage: "/assets/backgrounds/curtains.webp",
     frameworks: [
       { id: 1, name: "HTML" },
       { id: 2, name: "CSS" },
@@ -165,8 +165,8 @@ export const projects = [
     description:
       "Led a 4-member team to build a Spotify clone with full music player functionality (play, pause, skip). Delivered a polished, fully responsive UI - showcasing collaboration, product ownership, and strong frontend engineering.",
     href: "",
-    image: "/assets/projects/spotify-clone.jpg",
-    bgImage: "/assets/backgrounds/window.jpg",
+    image: "/assets/projects/spotify-clone.webp",
+    bgImage: "/assets/backgrounds/window.webp",
     frameworks: [
       { id: 1, name: "HTML" },
       { id: 2, name: "CSS" },
@@ -174,7 +174,6 @@ export const projects = [
     ],
   },
 ];
-
 
 export const socials = [
   {
