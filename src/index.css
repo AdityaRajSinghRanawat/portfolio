@@ -169,7 +169,7 @@ body {
 }
 
 @utility banner-text-responsive {
-  @apply text-2xl sm:text-4xl lg:text-6xl;
+  @apply text-4xl sm:text-5xl lg:text-6xl;
 }
 
 @utility value-text-responsive {
@@ -177,11 +177,15 @@ body {
 }
 
 @utility marquee-text-responsive {
-  @apply text-[28px] sm:text-[36px] lg:text-[42px];
+  @apply text-3xl sm:text-4xl lg:text-5xl;
+}
+
+@utility service-summary-text-responsive {
+  @apply text-4xl sm:text-5xl md:text-6xl lg:text-8xl;
 }
 
 @utility contact-text-responsive {
-  @apply text-4xl sm:text-5xl md:text-6xl lg:text-8xl;
+  @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl;
 }
 
 @utility responsive-line {

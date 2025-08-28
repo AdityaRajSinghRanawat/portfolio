@@ -8,6 +8,8 @@ import ReactLenis from "lenis/react";
 import About from "./sections/About";
 import gsap from "gsap";
 import Work from "./sections/Work";
+import ContactSummary from "./sections/ContactSummary";
+import Contact from "./sections/Contact";
 
 const App = () => {
   const [started, setStarted] = useState(false);
@@ -84,7 +86,6 @@ const App = () => {
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
-          
           <ReactLenis root>
             {/*
             Tailwind does not support dynamic class names like opacity-${value}
@@ -99,10 +100,9 @@ const App = () => {
             <ServiceSummary />
             <Services />
             <About />
-            <Work/>
-            <section id="contact" className="h-[200vh] bg-orange-300">
-              CONTACT
-            </section>
+            <Work />
+            <ContactSummary />
+            <Contact/>
           </ReactLenis>
         </div>
       )}

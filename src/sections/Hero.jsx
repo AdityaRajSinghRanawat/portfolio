@@ -26,6 +26,7 @@ const Hero = () => {
   const heroText = `From concept to deployment, I deliver web experiences
   that give brands and startups a competitive
   edge in the digital world`;
+  const heroTitleClass = "text-2xl sm:text-4xl lg:text-6xl"
 
   const heroTextColor = "text-black";
 
@@ -39,6 +40,7 @@ const Hero = () => {
         title={heroTitle}
         text={heroText}
         textColor={heroTextColor}
+        headerClass={heroTitleClass}
       />
       {/* 
           npm i three @react-three/fiber @react-three/drei react-responsive maath 

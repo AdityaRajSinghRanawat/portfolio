@@ -17,6 +17,7 @@ const AnimatedHeaderSection = ({
   textColor,
   tailwindClass,
   withScrollTrigger = false,
+  headerClass
 }) => {
   const contextRef = useRef(null);
   const headerRef = useRef(null);
@@ -73,7 +74,7 @@ const AnimatedHeaderSection = ({
             {/*
                   banner-text-responsive is my custom class in index.css
                 */}
-            <h1 className="flex flex-col flex-wrap gap-12  uppercase banner-text-responsive font-bold sm:font-semibold sm:gap-16 md:block">
+            <h1 className={`${headerClass} flex flex-col flex-wrap gap-12  uppercase banner-text-responsive font-bold sm:font-semibold sm:gap-16 md:block`}>
               {title}
             </h1>
           </div>
