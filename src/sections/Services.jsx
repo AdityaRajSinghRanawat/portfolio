@@ -8,11 +8,11 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
-  const serviceSubtitle = "behind the scene, beyond the scene";
+  const serviceSubtitle = "From concept to creation";
   const serviceTitle = "Service";
-  const serviceText = `I bill secure high performance Full stack apps 
-  with smooth ux to drive growth 
-  not headache`;
+  const serviceText = `I create full stack applications where 
+  performance meets user-first design 
+  for lasting experiences`;
   const serviceTextColor = "text-white";
   const serviceClass = "pt-[50px]";
   const serviceWithScrollTrigger = true;

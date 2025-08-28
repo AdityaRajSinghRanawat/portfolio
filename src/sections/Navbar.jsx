@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { contact, socials } from "../constants";
+import { contacts, socials } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link } from "react-scroll";
@@ -253,9 +253,9 @@ const Navbar = () => {
             <p className="tracking-wider text-white/50">E-mail</p>
             <a
               className="tracking-widest text-sm lg:text-xl lowercase text-pretty cursor-pointer transition-all duration-300  hover:text-white"
-              href={contact[0].email}
+              href={contacts[0].href}
             >
-              {contact[0].emailName}
+              {contacts[0].text}
             </a>
           </div>
           <div>

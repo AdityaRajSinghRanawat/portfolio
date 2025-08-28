@@ -191,9 +191,15 @@ export const socials = [
   },
 ];
 
-export const contact = [
+export const contacts = [
   {
-    email: "mailto:adityarajsinghranawatjobs@gmail.com",
-    emailName: "adityarajsinghranawatjobs@gmail.com",
+    name: "Email",
+    href: "mailto:adityarajsinghranawatjobs@gmail.com",
+    text: "adityarajsinghranawatjobs@gmail.com",
   },
+  {
+    name: "Phone",
+    phoneNumberLink: "tel:+918619231783",
+    text: "+91 86192 31783"
+  }
 ];

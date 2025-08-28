@@ -7,11 +7,11 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  const aboutSubtitle = "code with purpose, built to scale";
+  const aboutSubtitle = "code that matters, design that lasts";
   const aboutTitle = "about";
-  const aboutText = `I design clean, engaging, and scalable 
-  digital experiences that blend 
-  creativity with code.`;
+  const aboutText = `Building digital products that 
+  are fast, scalable, and 
+  effortless to use.`;
   const aboutTextColor = "text-white";
   const aboutClass = "pt-[50px]";
   const aboutWithScrollTrigger = true;
