@@ -59,7 +59,7 @@ const ContactSummary = () => {
   return (
     <section
       ref={containerRef}
-      className="flex flex-col items-center justify-between h-screen gap-12 mt-16"
+      className="flex flex-col items-center justify-between min-h-[100vh] gap-12 mt-16"
     >
       {/* Marquee */}
       <Marquee
