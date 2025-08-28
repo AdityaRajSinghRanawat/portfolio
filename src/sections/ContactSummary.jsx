@@ -63,7 +63,6 @@ const ContactSummary = () => {
         scrollTrigger: {
           trigger: ".main-text-section",
         },
-        delay: 0.5,
         autoAlpha: 0,
         y: 200,
         duration: 1,
