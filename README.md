@@ -13,22 +13,22 @@ A modern, responsive, and interactive **portfolio website** built to showcase my
 
 ## 🛠️ Tech Stack
 
-- **Framework**: React  
-- **Styling**: TailwindCSS  
-- **Animations**: GSAP  
-- **3D Rendering**: React Three Fiber, Drei  
-- **Optimizations**: Suspenser, Invalidate, FPS analyzer, DPR adjustments  
-- **Utilities**: Lenis (smooth scroll), Iconify  
+- **Framework**: React
+- **Styling**: TailwindCSS
+- **Animations**: GSAP
+- **3D Rendering**: React Three Fiber, Drei
+- **Optimizations**: Suspenser, Invalidate, FPS analyzer, DPR adjustments
+- **Utilities**: Lenis (smooth scroll), Iconify
 
 ## 🚀 Development Highlights
 
-- Refactored multiple times for improved layout and responsiveness.  
-- Integrated and debugged Lenis smooth scrolling.  
-- Optimized 3D performance by tuning camera, frame rates, and pixel ratios.  
-- Designed and animated sections: **Hero, About, Services, Contact**.  
-- Converted assets to WebP for faster loading.  
-- Conducted real-user testing and refined based on feedback.  
-- Finalized animations and design consistency before moving to the maintenance phase.  
+- Refactored multiple times for improved layout and responsiveness.
+- Integrated and debugged Lenis smooth scrolling.
+- Optimized 3D performance by tuning camera, frame rates, and pixel ratios.
+- Designed and animated sections: **Hero, About, Services, Contact**.
+- Converted assets to WebP for faster loading.
+- Conducted real-user testing and refined based on feedback.
+- Finalized animations and design consistency before moving to the maintenance phase.
 
 ## 🌍 Live Demo
 
@@ -36,37 +36,24 @@ A modern, responsive, and interactive **portfolio website** built to showcase my
 
 ## 📷 Preview
 
-<div style="margin-bottom: 40px;">
-  <img src="./showcase/welcome.png" alt="Welcome Section Screenshot" />
-</div>
-
-<div style="margin-bottom: 40px;">
-  <img src="./showcase/home.png" alt="Home Section Screenshot" />
-</div>
-
-<div style="margin-bottom: 40px;">
-  <img src="./showcase/service-summary.png" alt="Service Summary Screenshot" />
-</div>
-
-<div style="margin-bottom: 40px;">
-  <img src="./showcase/service.png" alt="Service Section Screenshot" />
-</div>
-
-<div style="margin-bottom: 40px;">
-  <img src="./showcase/about.png" alt="About Section Screenshot" />
-</div>
-
-<div style="margin-bottom: 40px;">
-  <img src="./showcase/work.png" alt="Work Section Screenshot" />
-</div>
-
-<div style="margin-bottom: 40px;">
-  <img src="./showcase/contact.png" alt="Contact Section Screenshot" />
-</div>
+![Portfolio Screenshot](./showcase/welcome.png)
+<br><br><br><br>
+![Portfolio Screenshot](./showcase/home.png)
+<br><br><br><br>
+![Portfolio Screenshot](./showcase/service-summary.png)
+<br><br><br><br>
+![Portfolio Screenshot](./showcase/service.png)
+<br><br><br><br>
+![Portfolio Screenshot](./showcase/about.png)
+<br><br><br><br>
+![Portfolio Screenshot](./showcase/work.png)
+<br><br><br><br>
+![Portfolio Screenshot](./showcase/contact.png)
+<br><br><br><br>
 
 ## 👨‍💻 Author
 
-**Aditya Raj Singh Ranawat**  
-Passionate Web Developer exploring **3D web, GSAP animations, and user-centric experiences**.  
+**Aditya Raj Singh Ranawat**
+Passionate Web Developer exploring **3D web, GSAP animations, and user centric driven experiences**.
 
 📍 Jaipur, India | JLPT N5 Certified
