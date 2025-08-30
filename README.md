@@ -37,31 +37,19 @@ A modern, responsive, and interactive **portfolio website** built to showcase my
 ## 📷 Preview
 
 ![Portfolio Screenshot](./showcase/welcome.png)
-
+<br><br>
 ![Portfolio Screenshot](./showcase/home.png)
-
-
-
+<br><br>
 ![Portfolio Screenshot](./showcase/service-summary.png)
-
-
-
+<br><br>
 ![Portfolio Screenshot](./showcase/service.png)
-
-
-
+<br><br>
 ![Portfolio Screenshot](./showcase/about.png)
-
-
-
+<br><br>
 ![Portfolio Screenshot](./showcase/work.png)
-
-
-
+<br><br>
 ![Portfolio Screenshot](./showcase/contact.png)
-
-
-
+<br><br>
 
 ## 👨‍💻 Author
 
