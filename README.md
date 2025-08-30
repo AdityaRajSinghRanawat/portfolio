@@ -1,3 +1,7 @@
+## 🌍 Live Demo
+
+👉 [Visit the Live Site](https://aditya-creative-dev-portfolio.netlify.app/)
+
 # 🌐 Portfolio Website
 
 A modern, responsive, and interactive **portfolio website** built to showcase my work, skills, and projects. The site is designed with performance, animations, and user experience in mind.
@@ -30,10 +34,6 @@ A modern, responsive, and interactive **portfolio website** built to showcase my
 - Conducted real-user testing and refined based on feedback.
 - Finalized animations and design consistency before moving to the maintenance phase.
 
-## 🌍 Live Demo
-
-👉 [Visit the Live Site](https://aditya-creative-dev-portfolio.netlify.app/)
-
 ## 📷 Preview
 
 ![Portfolio Screenshot](./showcase/welcome.png)
@@ -47,6 +47,8 @@ A modern, responsive, and interactive **portfolio website** built to showcase my
 ![Portfolio Screenshot](./showcase/about.png)
 <br><br><br><br>
 ![Portfolio Screenshot](./showcase/work.png)
+<br><br><br><br>
+![Portfolio Screenshot](./showcase/contact-summary.png)
 <br><br><br><br>
 ![Portfolio Screenshot](./showcase/contact.png)
 <br><br><br><br>
