@@ -1,12 +1,59 @@
-# React + Vite
+# 🌐 Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive **portfolio website** built to showcase my work, skills, and projects. The site is designed with performance, animations, and user experience in mind.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 **Clean & Modern UI** – Responsive design for desktop, tablet, and mobile.
+- 🌀 **Smooth Animations** – GSAP-powered scroll and section transitions.
+- 🖼️ **3D Integration** – React Three Fiber for interactive 3D experiences.
+- ⚡ **Performance Optimized** – Compressed models, lazy loading, DPR scaling, and FPS tuning.
+- 🔍 **SEO Ready** – Meta tags, preview image, and accessibility improvements.
+- 📱 **Mobile-First Design** – Tested and optimized for real-world mobile usage.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: React
+- **Styling**: TailwindCSS
+- **Animations**: GSAP
+- **3D Rendering**: React Three Fiber, Drei
+- **Optimizations**: Suspenser, Invalidate, FPS analyzer, DPR adjustments
+- **Utilities**: Lenis (smooth scroll), Iconify
+
+## 🚀 Development Highlights
+
+- Refactored multiple times for improved layout and responsiveness.
+- Integrated and debugged Lenis smooth scrolling.
+- Optimized 3D performance by tuning camera, frame rates, and pixel ratios.
+- Designed and animated sections: **Hero, About, Services, Contact**.
+- Converted assets to WebP for faster loading.
+- Conducted real-user testing and refined based on feedback.
+- Finalized animations and design consistency before moving to the maintenance phase.
+
+## 🌍 Live Demo
+
+👉 [Visit the Live Site](https://aditya-creative-dev-portfolio.netlify.app/)
+
+## 📷 Preview
+
+![Portfolio Screenshot](./showcase/welcome.png)
+
+![Portfolio Screenshot](./showcase/home.png)
+
+![Portfolio Screenshot](./showcase/service-summary.png)
+
+![Portfolio Screenshot](./showcase/service.png)
+
+![Portfolio Screenshot](./showcase/about.png)
+
+![Portfolio Screenshot](./showcase/work.png)
+
+![Portfolio Screenshot](./showcase/contact.png)
+
+
+## 👨‍💻 Author
+
+**Aditya Raj Singh Ranawat**
+Passionate Web Developer exploring **3D web, GSAP animations, and user centric driven experiences**.
+
+📍 Jaipur, India | JLPT N5 Certified
