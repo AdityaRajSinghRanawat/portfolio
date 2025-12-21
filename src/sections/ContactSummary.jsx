@@ -73,7 +73,7 @@ const ContactSummary = () => {
   return (
     <section
       ref={containerRef}
-      className={`flex flex-col items-center h-screen gap-12 ${isTablet ? "mt-0 justify-center" : "mt-16 justify-between"}`}
+      className={`flex flex-col items-center h-screen gap-12 transition-none ${isTablet ? "mt-0 justify-center" : "mt-16 justify-between"}`}
     >
       {isTablet ? (
         <>

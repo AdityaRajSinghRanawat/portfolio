@@ -219,7 +219,7 @@ const Work = () => {
             */}
 
             {/* title */}
-            <div className="flex justify-between px-5 sm:px-10 text-black transition-all duration-500 md:group-hover:text-white md:group-hover:px-12">
+            <div className="flex justify-between px-5 sm:px-10 text-black transition-colors duration-500 md:group-hover:text-white md:group-hover:px-12">
               <h2 className="work-text-responsive leading-none">
                 {project.name}
               </h2>
@@ -230,7 +230,7 @@ const Work = () => {
             <div className="w-full h-0.5 bg-black/80 my-2" />
 
             {/* framework */}
-            <div className="flex px-5 sm:px-10 text-xm md:text-sm leading-loose uppercase transition-all duration-500 gap-x-5 md:group-hover:px-12 flex-wrap">
+            <div className="flex px-5 sm:px-10 text-xm md:text-sm leading-loose uppercase transition-colors duration-500 gap-x-5 md:group-hover:px-12 flex-wrap">
               {project.frameworks.map((framework) => (
                 <p
                   key={framework.id}
