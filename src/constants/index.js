@@ -183,7 +183,7 @@ export const socials = [
   { name: "GitHub", href: "https://github.com/AdityaRajSinghRanawat/" },
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/1BHX5vOaFvyEBtJsDzAyUjoPd6qBFep8V/view",
+    href: "https://drive.google.com/file/d/1BHX5vOaFvyEBtJsDzAyUjoPd6qBFep8V/view?usp=sharing",
   },
   {
     name: "Instagram",
